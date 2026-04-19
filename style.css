@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-primaria: #0f130b; /* Roxo vibrante */
+  --cor-secundaria: #00b894; /* Verde-água */
+  --cor-texto: #2d3436; /* Cinza escuro */
+  --cor-texto-claro: #636e72; /* Cinza médio */
+  --cor-fundo: #f5f6fa; /* Cinza clarinho */
+  --cor-branco: #ffffff;
+  --cor-sombra: rgba(0, 0, 0, 0.2); /* Preto transparente para sombras */
+
+  --espacamento: 20px;
+  --border-radius: 10px;
+}
+
+body {
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  line-height: 1.6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--espacamento);
+}
+
+header {
+  background: linear-gradient(
+    135deg,
+    var(--cor-primaria),
+    var(--cor-secundaria)
+  );
+  color: var(--cor-branco);
+  text-align: center;
+}
+
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid var(--cor-branco);
+  box-shadow: 0 5px 20px var(--cor-sombra);
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: var(--cor-primaria);
+  margin-bottom: 30px;
+  text-align: center;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: var(--cor-secundaria);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.sobre-mim {
+  background: var(--cor-branco);
+}
+
+.sobre-mim p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.experiencias {
+  background: var(--cor-branco);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  margin-bottom: 20px;
+  position: relative;
+  border-left: 5px solid var(--cor-primaria);
+  box-shadow: 0 2px 10px var(--cor-sombra);
+  transition: all 0.3s ease;
+}
+
+.card-experiencias:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px var(--cor-sombra);
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.badge.atual {
+  background: var(--cor-secundaria);
+  color: var(--cor-branco);
+}
+
+.badge.passada {
+  background: var(--cor-texto-claro);
+  color: var(--cor-branco);
+}
+
+.card-experiencia h3 {
+  color: var(--cor-primaria);
+  margin-bottom: 10px;
+}
+
+.empresa {
+  font-weight: bold;
+  color: var(--cor-texto);
+  margin-bottom: 5px;
+}
+
+.periodo {
+  font-size: 0.9rem;
+  color: var(--cor-texto-claro);
+  margin-bottom: 15px;
+}
+
+.descricao {
+  color: var(--cor-texto-claro);
+  line-height: 1.6;
+}
