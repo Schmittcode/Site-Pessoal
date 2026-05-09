@@ -5,13 +5,13 @@
 }
 
 :root {
-  --cor-primaria: #0f130b; /* Roxo vibrante */
-  --cor-secundaria: #00b894; /* Verde-água */
-  --cor-texto: #2d3436; /* Cinza escuro */
-  --cor-texto-claro: #636e72; /* Cinza médio */
-  --cor-fundo: #f5f6fa; /* Cinza clarinho */
+--cor-primaria: #2d3436;    /* Grafite escuro */
+  --cor-secundaria: #0984e3;  /* Azul tecnologia */
+  --cor-texto: #2d3436;
+  --cor-texto-claro: #636e72;
+  --cor-fundo: #f1f2f6;       /* Cinza azulado bem claro */
   --cor-branco: #ffffff;
-  --cor-sombra: rgba(0, 0, 0, 0.2); /* Preto transparente para sombras */
+  --cor-sombra: rgba(0, 0, 0, 0.1);
 
   --espacamento: 20px;
   --border-radius: 10px;
@@ -147,4 +147,88 @@ section h2::after {
 .descricao {
   color: var(--cor-texto-claro);
   line-height: 1.6;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skill-tag {
+  background: var(--cor-branco);
+  color: var(--cor-primaria);
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  box-shadow: 0 2px 5px var(--cor-sombra);
+  border: 1px solid var(--cor-fundo);
+  transition: 0.3s;
+}
+
+.skill-tag:hover {
+  background: var(--cor-secundaria);
+  color: var(--cor-branco);
+  transform: scale(1.05);
+}
+
+.card-educacao {
+  background: var(--cor-branco);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-left: 5px solid var(--cor-primaria);
+  box-shadow: 0 2px 10px var(--cor-sombra);
+}
+
+.card-educacao h3 {
+  color: var(--cor-primaria);
+  margin-bottom: 5px;
+}
+
+footer {
+  background: var(--cor-primaria);
+  color: var(--cor-branco);
+  text-align: center;
+  padding:20px 40px;
+}
+
+footer h2 {
+  color: var(--cor-branco);
+}
+
+.links-contatos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+a {
+  color: var(--cor-primaria);
+}
+
+.btn-contato {
+  text-decoration: none;
+  background: var(--cor-branco);
+  border: 2px solid var(--cor-primaria);
+  border-radius: var(--border-radius);
+  transition: 0.3s;
+}
+
+.btn-contato:hover {
+  background: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  font-weight: bold;
+}
+
+.copy {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-top: 20px;
 }
