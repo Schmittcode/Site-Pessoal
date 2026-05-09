@@ -91,7 +91,7 @@ section h2::after {
   margin: 0 auto 20px;
 }
 
-.experiencias {
+.card-experiencias {
   background: var(--cor-branco);
   border-radius: var(--border-radius);
   padding: 25px;
