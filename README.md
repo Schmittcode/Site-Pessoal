@@ -23,15 +23,6 @@ A escolha visual seguiu uma linha **Clean e Profissional**, utilizando uma palet
 
 ---
 
-## 📂 Como acessar
-
-O projeto está hospedado no GitHub Pages e pode ser visualizado em tempo real:
-👉 [**Acessar meu Portfólio**](# 💻 Meu Portfólio Pessoal
-
-Este é o repositório do meu site pessoal, desenvolvido para centralizar minha trajetória acadêmica, habilidades técnicas e projetos. Como estudante de Sistemas de Informação na UNIFEBE, utilizo este espaço como meu cartão de visitas no ecossistema de tecnologia.
-
----
-
 ## 🚀 Tecnologias e Ferramentas
 
 O projeto foi construído focando nos fundamentos da Web para garantir um código limpo e performático:
